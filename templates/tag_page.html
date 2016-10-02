@@ -1,0 +1,6 @@
+{%extends "base.html"%}
+{%block title%} TAG : {{ tag_name }} {%endblock%}
+{%block head%} Bookmarks for tag : {{ username }} {%endblock%}
+{%block content%}
+	{% include "bookmark_list.html"%}
+{%endblock%}

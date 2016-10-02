@@ -1,0 +1,12 @@
+{%if classes %}
+<ul class = "classes">
+	{%for class in classes %}
+ 		<li>
+			<a href=" /class/{{ class.course.code }}/{{ class.name }}/{{ class.year }}/{{ class.semester }}" class="title">
+			{{ class.course.code}} - {{ class.course.name }} : {{ class.name }} - {{ class.year }}/{{ class.semester }} </a>
+	    </li>
+	{% endfor %}
+</ul>
+{% else %}
+ <p> Nenhuma Turma </p>
+{%endif%}

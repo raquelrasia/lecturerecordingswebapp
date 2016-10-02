@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+{%block title%} Bem Vindo {%endblock%}
+{%block head%} {%endblock%}
+{%block content%}
+	{%if user.username%}
+	<h1> Bem vindo(a) {{ user.username }}!</h1>
+	<p>	Retome as aulas das suas disciplinas! </p>
+	{%else%}
+	<h1> Bem vindo(a)!</h1>
+	<p> 	Você precisa fazer <a href="/login/"> login</a>
+		antes de poder acessar as aulas.</p>
+	{%endif%}
+	<div class="center">
+	<p>
+	</p>
+	</div>
+{%endblock%}

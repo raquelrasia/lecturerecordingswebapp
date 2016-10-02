@@ -1,0 +1,10 @@
+{%extends "base.html"%}
+{%block title%} Upload de Video {%endblock%}
+{%block head%} Escolha um arquivo de vídeo {%endblock%}
+{%block content%}
+<form method="post" enctype="multipart/form-data" action=".">
+{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" value = "salvar" />
+</form>
+{%endblock%}

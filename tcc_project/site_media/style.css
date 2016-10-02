@@ -1,0 +1,88 @@
+#header {
+ 	color: #ffd700; 
+ 	font-family: 'Helvetica Neue', 
+ 	sans-serif; font-size: 200; 
+ 	font-weight: bold; 
+ 	letter-spacing: 5px; 
+ 	line-height: 1;
+    vertical-align:middle;
+    text-align: center;
+	background-color: #362819;
+	height: 200px
+}
+
+#nav {
+	float: right;
+}
+
+input {
+	display : block;
+}
+.center {   	margin-left: auto;
+				margin-right: auto;
+				width: 400px; }
+
+#logo {
+	height : 146;
+	width: 400;
+	background-image: url("utfpr.jpg");
+}
+
+
+h1 { color: #111; 
+	font-family: 'Helvetica Neue', 
+	sans-serif; font-size: 40px; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 1; 
+	text-align: left; }
+
+
+h4 { color: #111; 
+	font-family: 'Open Sans', 
+	sans-serif; font-size: 50px; 
+	font-weight: 300; 
+	line-height: 32px; 
+	margin: 0 0 72px; 
+	text-align: left; }
+
+h2 { color: #111; 
+	font-family: 'Open Sans', 
+	sans-serif; font-size: 30px; 
+	font-weight: 300; 
+	line-height: 32px; 
+	margin: 0 0 72px; 
+	text-align: left; }
+
+
+p { color: #685206; font-family: 
+	'Helvetica Neue', sans-serif; 
+	font-size: 14px; line-height: 
+	24px; margin: 0 0 24px; 
+	text-align: justify; 
+	text-justify: inter-word; 
+}
+
+ul.tags, ul.tags li{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#tag-cloud{
+	text-align: center:;
+}
+
+#tag-cloud a {
+	margin: 0 0.2em;
+}
+
+.tag-cloud-0{ font-size: 100%; }
+.tag-cloud-1{ font-size: 120%; }
+.tag-cloud-2{ font-size: 140%; }
+.tag-cloud-3{ font-size: 160%; }
+.tag-cloud-4{ font-size: 180%; }
+.tag-cloud-5{ font-size: 200%; }
+
+ul.course .edit{
+	font-size : 70%;
+}

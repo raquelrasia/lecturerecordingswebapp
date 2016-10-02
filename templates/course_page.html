@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block title%} {{ course.code }} {%endblock%}
+{%block head%} {{ course.name }} - {{ course.code  }} 
+{%endblock%}
+{%block content%}
+	{% include "class_list.html"%}
+	{% if show_button %}
+	<form action="class_save/">
+   	 <input type="submit" value="Adicionar Turma" />
+	</form>
+	{% endif %}
+{%endblock%}

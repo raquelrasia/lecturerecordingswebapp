@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+{% block external %}
+	<script type="text/javascript" src="/site_media/course_edit.js"></script>
+{%endblock%}
+{%block title%} Disciplinas {%endblock%}
+{%block head%} Lista de todas as disciplinas cadastradas: {%endblock%}
+{%block content%}
+{%include 'course_list.html' %}
+{%if user.is_authenticated%}
+{%if user.profile.is_teacher%}
+<a href= "/course_save"> Cadastrar Disciplina </a>
+{%endif%}
+{%endif%}
+{%endblock%}
