@@ -3,8 +3,12 @@ from django.contrib.auth.models import User
 from django.contrib.auth.signals import user_logged_in
 import os
 from tcc_project.settings import MEDIA_ROOT
-from aux_funcs import get_course_class_path
 
+
+def get_course_class_path(course, my_class):
+    path = course.code +'/'+ my_class.name + '/' + str(my_class.year) + '_' + my_class.semester + '/'
+    return path
+    
 class Profile(models.Model):  
     user = models.OneToOneField(User, on_delete=models.CASCADE)  
     #other fields here
