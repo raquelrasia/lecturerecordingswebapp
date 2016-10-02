@@ -14,7 +14,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
 from datetime import datetime
 from django.views.decorators.csrf import csrf_exempt
-from xml_handler import *
+from lecture_recorder.xml_handler import *
 import os
 from tcc_project.settings import MEDIA_ROOT
 from django.utils.encoding import smart_str
