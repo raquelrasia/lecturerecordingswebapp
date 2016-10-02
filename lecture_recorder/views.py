@@ -276,8 +276,10 @@ def video_audio_upload_page(request, course_code, class_name, class_year, class_
                 lecture.my_class = my_class
                 my_class.save()
 
-                #Video File 
-                if request.FILES.has_key('file'):
+                for afile in request.FILES.getlist('file'):
+                    file = afile
+                ##Video File 
+                #if request.FILES.has_key('file'):
                     has_video = True
                     file = request.FILES['file']
                     if not lecture_created and hasattr(lecture, 'video'):
@@ -293,8 +295,10 @@ def video_audio_upload_page(request, course_code, class_name, class_year, class_
                     #handle_uploaded_file(video.file, dest_path)
                     video.save()
 
+                for afile in request.FILES.getlist('aduio_file'):
+                    file = afile
                 #Audio File
-                if request.FILES.has_key('audio_file'): 
+                #if request.FILES.has_key('audio_file'): 
                     has_audio = True
                     audio_file =  request.FILES['audio_file']
                     if not lecture_created and hasattr(lecture, 'audio'):
