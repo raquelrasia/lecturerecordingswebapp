@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Course, Class, Video, Tag
+from lecture_recorder.models import Course, Class, Video, Tag
 
 admin.site.register(Course)
 admin.site.register(Class)
